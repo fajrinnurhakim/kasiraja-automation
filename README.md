@@ -40,14 +40,15 @@ Make sure you have installed the following software :
    ```
 
 ## Evidence
+
 1. Code
-<video controls src="https://github.com/fajrinnurhakim/kasiraja-automation/blob/main/evidence/user.suite.js%20-%20Kasiraja%20-%20Visual%20Studio%20Code%202024-05-01%2019-45-31.mp4" title="Title"></video>
+   https://github.com/fajrinnurhakim/kasiraja-automation/blob/main/evidence/user.suite.js%20-%20Kasiraja%20-%20Visual%20Studio%20Code%202024-05-01%2019-45-31.mp4
 
 2. mocha
-<video controls src="https://github.com/fajrinnurhakim/kasiraja-automation/blob/main/evidence/config.json%20-%20Kasiraja%20-%20Visual%20Studio%20Code%202024-05-01%2019-46-16.mp4" title="Title"></video>
+   https://github.com/fajrinnurhakim/kasiraja-automation/blob/main/evidence/config.json%20-%20Kasiraja%20-%20Visual%20Studio%20Code%202024-05-01%2019-46-16.mp4
 
 3. mochawesome
-<video controls src="https://github.com/fajrinnurhakim/kasiraja-automation/blob/main/evidence/Mochawesome%20Report%20-%20Google%20Chrome%202024-05-01%2019-47-29.mp4" title="Title"></video>
+   https://github.com/fajrinnurhakim/kasiraja-automation/blob/main/evidence/Mochawesome%20Report%20-%20Google%20Chrome%202024-05-01%2019-47-29.mp4
 
 ## API / Features
 
@@ -82,5 +83,3 @@ User Feature CRUD includes:
 - GET = Get User Detail
 - PUT = Update User Detail
 - DELETE = Delete User
-
-
