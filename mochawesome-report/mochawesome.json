@@ -5,9 +5,9 @@
     "passes": 40,
     "pending": 0,
     "failures": 0,
-    "start": "2024-05-01T12:53:41.358Z",
-    "end": "2024-05-01T12:53:46.120Z",
-    "duration": 4762,
+    "start": "2024-05-01T13:11:56.176Z",
+    "end": "2024-05-01T13:12:00.982Z",
+    "duration": 4806,
     "testsRegistered": 40,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "ea020a7e-e1ad-454b-a551-1b9725adee03",
+      "uuid": "503ed553-05bb-487a-a778-c90d6b2ab3b7",
       "title": "",
       "fullFile": "",
       "file": "",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "4c9aba91-17c1-4685-a8a7-ddec827d6b57",
+          "uuid": "8d76e846-1edb-429d-a823-9d6b54be9deb",
           "title": "Category Feature",
           "fullFile": "D:\\Folder penting ittp tercinta\\Sanbercode\\QA Automation\\tugas pekanan 3\\Kasiraja\\test-suites\\category.suite.js",
           "file": "\\test-suites\\category.suite.js",
@@ -36,7 +36,7 @@
           "tests": [],
           "suites": [
             {
-              "uuid": "92739df5-e0e4-46a6-babb-465dd5f2843d",
+              "uuid": "9f626729-ab20-4f06-8f00-81dae6683d3e",
               "title": "Get Token",
               "fullFile": "D:\\Folder penting ittp tercinta\\Sanbercode\\QA Automation\\tugas pekanan 3\\Kasiraja\\test-suites\\category.suite.js",
               "file": "\\test-suites\\category.suite.js",
@@ -47,7 +47,7 @@
                   "title": "Success Get Token",
                   "fullTitle": "Category Feature Get Token Success Get Token",
                   "timedOut": false,
-                  "duration": 496,
+                  "duration": 483,
                   "state": "passed",
                   "speed": "slow",
                   "pass": true,
@@ -56,26 +56,26 @@
                   "context": null,
                   "code": "const response = await request\n  .post('/authentications')\n  .send(auth.loginSuccess);\ntoken = response.body.data.accessToken;",
                   "err": {},
-                  "uuid": "592c58b5-6754-4a36-b1cb-9c8cfa4af8fd",
-                  "parentUUID": "92739df5-e0e4-46a6-babb-465dd5f2843d",
+                  "uuid": "b106a78d-62a8-4297-a642-23a7eef2d02a",
+                  "parentUUID": "9f626729-ab20-4f06-8f00-81dae6683d3e",
                   "isHook": false,
                   "skipped": false
                 }
               ],
               "suites": [],
               "passes": [
-                "592c58b5-6754-4a36-b1cb-9c8cfa4af8fd"
+                "b106a78d-62a8-4297-a642-23a7eef2d02a"
               ],
               "failures": [],
               "pending": [],
               "skipped": [],
-              "duration": 496,
+              "duration": 483,
               "root": false,
               "rootEmpty": false,
               "_timeout": 2000
             },
             {
-              "uuid": "8528bfb5-900e-4c47-8e86-ecd1eca36e8f",
+              "uuid": "2999a000-32a9-4449-91f0-083ddc1bc40b",
               "title": "Create Category",
               "fullFile": "D:\\Folder penting ittp tercinta\\Sanbercode\\QA Automation\\tugas pekanan 3\\Kasiraja\\test-suites\\category.suite.js",
               "file": "\\test-suites\\category.suite.js",
@@ -86,7 +86,7 @@
                   "title": "Success create a new category",
                   "fullTitle": "Category Feature Create Category Success create a new category",
                   "timedOut": false,
-                  "duration": 74,
+                  "duration": 72,
                   "state": "passed",
                   "speed": "medium",
                   "pass": true,
@@ -95,8 +95,8 @@
                   "context": null,
                   "code": "const response = request\n  .post('/categories')\n  .send(category.createSuccess)\n  .set('Authorization', `Bearer ${token}`);\nuserId = (await response).body.data.categoryId;\nexpect((await response).status).to.equal(201);\nexpect((await response).body.status).to.equal('success');\nexpect((await response).body.message).to.equal(\n  'Category berhasil ditambahkan'\n);\nexpect((await response).body.data.name).to.equal('makanan ringan');",
                   "err": {},
-                  "uuid": "f6ac4fab-75f6-4ff2-aa04-7a256f79f665",
-                  "parentUUID": "8528bfb5-900e-4c47-8e86-ecd1eca36e8f",
+                  "uuid": "4900b881-75ba-4ca5-96b8-5fff9bf6136b",
+                  "parentUUID": "2999a000-32a9-4449-91f0-083ddc1bc40b",
                   "isHook": false,
                   "skipped": false
                 },
@@ -104,36 +104,36 @@
                   "title": "Failed create a new category",
                   "fullTitle": "Category Feature Create Category Failed create a new category",
                   "timedOut": false,
-                  "duration": 70,
+                  "duration": 93,
                   "state": "passed",
-                  "speed": "medium",
+                  "speed": "slow",
                   "pass": true,
                   "fail": false,
                   "pending": false,
                   "context": null,
                   "code": "const response = request\n  .post('/categories')\n  .send(category.createFailed)\n  .set('Authorization', `Bearer ${token}`);\nexpect((await response).status).to.equal(400);\nexpect((await response).body.status).to.equal('fail');",
                   "err": {},
-                  "uuid": "1b057b3b-bc00-49d8-90f4-39f6d5149c8b",
-                  "parentUUID": "8528bfb5-900e-4c47-8e86-ecd1eca36e8f",
+                  "uuid": "23b90a34-4225-49e2-b2ca-752aeda21cdf",
+                  "parentUUID": "2999a000-32a9-4449-91f0-083ddc1bc40b",
                   "isHook": false,
                   "skipped": false
                 }
               ],
               "suites": [],
               "passes": [
-                "f6ac4fab-75f6-4ff2-aa04-7a256f79f665",
-                "1b057b3b-bc00-49d8-90f4-39f6d5149c8b"
+                "4900b881-75ba-4ca5-96b8-5fff9bf6136b",
+                "23b90a34-4225-49e2-b2ca-752aeda21cdf"
               ],
               "failures": [],
               "pending": [],
               "skipped": [],
-              "duration": 144,
+              "duration": 165,
               "root": false,
               "rootEmpty": false,
               "_timeout": 2000
             },
             {
-              "uuid": "9f556bf1-dddb-4b46-83c9-71c674eb2866",
+              "uuid": "cdc8d185-f816-4b30-9f2b-ff04042c4b72",
               "title": "Get Category List",
               "fullFile": "D:\\Folder penting ittp tercinta\\Sanbercode\\QA Automation\\tugas pekanan 3\\Kasiraja\\test-suites\\category.suite.js",
               "file": "\\test-suites\\category.suite.js",
@@ -144,7 +144,7 @@
                   "title": "Success Get Category List",
                   "fullTitle": "Category Feature Get Category List Success Get Category List",
                   "timedOut": false,
-                  "duration": 65,
+                  "duration": 66,
                   "state": "passed",
                   "speed": "medium",
                   "pass": true,
@@ -153,26 +153,26 @@
                   "context": null,
                   "code": "const response = await request\n  .get(`/categories/${userId}`)\n  .set('Authorization', `Bearer ${token}`);\nexpect(response.status).to.equal(200);\nexpect(response.body.status).to.equal('success');",
                   "err": {},
-                  "uuid": "c8d24984-adb5-4e9a-bd84-42832c6cdb30",
-                  "parentUUID": "9f556bf1-dddb-4b46-83c9-71c674eb2866",
+                  "uuid": "7de388c7-759f-4196-9e6a-797d1dbac99f",
+                  "parentUUID": "cdc8d185-f816-4b30-9f2b-ff04042c4b72",
                   "isHook": false,
                   "skipped": false
                 }
               ],
               "suites": [],
               "passes": [
-                "c8d24984-adb5-4e9a-bd84-42832c6cdb30"
+                "7de388c7-759f-4196-9e6a-797d1dbac99f"
               ],
               "failures": [],
               "pending": [],
               "skipped": [],
-              "duration": 65,
+              "duration": 66,
               "root": false,
               "rootEmpty": false,
               "_timeout": 2000
             },
             {
-              "uuid": "aedca35c-7632-4914-a402-eb6488e22c93",
+              "uuid": "30c68489-ac08-4411-9868-fc6b34f652ec",
               "title": "Get Category Detail",
               "fullFile": "D:\\Folder penting ittp tercinta\\Sanbercode\\QA Automation\\tugas pekanan 3\\Kasiraja\\test-suites\\category.suite.js",
               "file": "\\test-suites\\category.suite.js",
@@ -183,7 +183,7 @@
                   "title": "Success Get Category Detail",
                   "fullTitle": "Category Feature Get Category Detail Success Get Category Detail",
                   "timedOut": false,
-                  "duration": 70,
+                  "duration": 62,
                   "state": "passed",
                   "speed": "medium",
                   "pass": true,
@@ -192,8 +192,8 @@
                   "context": null,
                   "code": "const response = await request\n  .get(`/categories/${userId}`)\n  .set('Authorization', `Bearer ${token}`);\nexpect(response.status).to.equal(200);\nexpect(response.body.status).to.equal('success');\nexpect(response.body.data.category.name).to.equal('makanan ringan');\nexpect(response.body.data.category.description).to.equal(\n  'makanan ringan dari indofood'\n);",
                   "err": {},
-                  "uuid": "a9f81141-dec2-4b8f-a920-b1f1106a9720",
-                  "parentUUID": "aedca35c-7632-4914-a402-eb6488e22c93",
+                  "uuid": "68c726d4-985b-4fe1-9ccf-e6be93839454",
+                  "parentUUID": "30c68489-ac08-4411-9868-fc6b34f652ec",
                   "isHook": false,
                   "skipped": false
                 },
@@ -201,7 +201,7 @@
                   "title": "Failed Get User Detail",
                   "fullTitle": "Category Feature Get Category Detail Failed Get User Detail",
                   "timedOut": false,
-                  "duration": 62,
+                  "duration": 72,
                   "state": "passed",
                   "speed": "medium",
                   "pass": true,
@@ -210,27 +210,27 @@
                   "context": null,
                   "code": "const response = await request\n  .get(`/categories/${userId + '123'}`)\n  .set('Authorization', `Bearer ${token}`);\nexpect(response.status).to.equal(404);\nexpect(response.body.message).to.equal('id tidak valid');",
                   "err": {},
-                  "uuid": "68edadae-ba25-4d84-b0c8-1cc115ba17fa",
-                  "parentUUID": "aedca35c-7632-4914-a402-eb6488e22c93",
+                  "uuid": "3ac8457d-afff-4862-a7b4-00f6a1fddc9a",
+                  "parentUUID": "30c68489-ac08-4411-9868-fc6b34f652ec",
                   "isHook": false,
                   "skipped": false
                 }
               ],
               "suites": [],
               "passes": [
-                "a9f81141-dec2-4b8f-a920-b1f1106a9720",
-                "68edadae-ba25-4d84-b0c8-1cc115ba17fa"
+                "68c726d4-985b-4fe1-9ccf-e6be93839454",
+                "3ac8457d-afff-4862-a7b4-00f6a1fddc9a"
               ],
               "failures": [],
               "pending": [],
               "skipped": [],
-              "duration": 132,
+              "duration": 134,
               "root": false,
               "rootEmpty": false,
               "_timeout": 2000
             },
             {
-              "uuid": "ccad2b55-0bd9-4329-816f-3feaebe05f40",
+              "uuid": "45a5d943-1803-449a-9654-73f3c6296bc8",
               "title": "Update Category Detail",
               "fullFile": "D:\\Folder penting ittp tercinta\\Sanbercode\\QA Automation\\tugas pekanan 3\\Kasiraja\\test-suites\\category.suite.js",
               "file": "\\test-suites\\category.suite.js",
@@ -241,7 +241,7 @@
                   "title": "Success Update Category Detail",
                   "fullTitle": "Category Feature Update Category Detail Success Update Category Detail",
                   "timedOut": false,
-                  "duration": 64,
+                  "duration": 65,
                   "state": "passed",
                   "speed": "medium",
                   "pass": true,
@@ -250,8 +250,8 @@
                   "context": null,
                   "code": "const response = await request\n  .put(`/categories/${userId}`)\n  .send(category.updateSuccess)\n  .set('Authorization', `Bearer ${token}`);\nexpect(response.status).to.equal(200);\nexpect(response.body.status).to.equal('success');\nexpect(response.body.data.name).to.equal('makring');",
                   "err": {},
-                  "uuid": "8d530314-4e27-4277-87a1-c866dfbc10ea",
-                  "parentUUID": "ccad2b55-0bd9-4329-816f-3feaebe05f40",
+                  "uuid": "4076539c-f060-4af3-b0ae-4375adf6227a",
+                  "parentUUID": "45a5d943-1803-449a-9654-73f3c6296bc8",
                   "isHook": false,
                   "skipped": false
                 },
@@ -268,27 +268,27 @@
                   "context": null,
                   "code": "const response = await request\n  .put(`/categories/${userId}`)\n  .send(category.updateFailed)\n  .set('Authorization', `Bearer ${token}`);\nexpect(response.status).to.equal(400);\nexpect(response.body.message).to.equal(\n  '\"name\" is not allowed to be empty'\n);",
                   "err": {},
-                  "uuid": "428dbb9f-d8f6-4628-b5d2-0d7d1c38dacb",
-                  "parentUUID": "ccad2b55-0bd9-4329-816f-3feaebe05f40",
+                  "uuid": "a41d87e1-076e-411d-8eb6-c06eaef9243a",
+                  "parentUUID": "45a5d943-1803-449a-9654-73f3c6296bc8",
                   "isHook": false,
                   "skipped": false
                 }
               ],
               "suites": [],
               "passes": [
-                "8d530314-4e27-4277-87a1-c866dfbc10ea",
-                "428dbb9f-d8f6-4628-b5d2-0d7d1c38dacb"
+                "4076539c-f060-4af3-b0ae-4375adf6227a",
+                "a41d87e1-076e-411d-8eb6-c06eaef9243a"
               ],
               "failures": [],
               "pending": [],
               "skipped": [],
-              "duration": 132,
+              "duration": 133,
               "root": false,
               "rootEmpty": false,
               "_timeout": 2000
             },
             {
-              "uuid": "19c22250-f60d-4d23-b533-f51e469399ce",
+              "uuid": "76fd7dc7-e17b-4247-8129-3d976bc45528",
               "title": "Delete Category",
               "fullFile": "D:\\Folder penting ittp tercinta\\Sanbercode\\QA Automation\\tugas pekanan 3\\Kasiraja\\test-suites\\category.suite.js",
               "file": "\\test-suites\\category.suite.js",
@@ -299,7 +299,7 @@
                   "title": "Success Delete Category",
                   "fullTitle": "Category Feature Delete Category Success Delete Category",
                   "timedOut": false,
-                  "duration": 71,
+                  "duration": 75,
                   "state": "passed",
                   "speed": "medium",
                   "pass": true,
@@ -308,8 +308,8 @@
                   "context": null,
                   "code": "const response = await request\n  .delete(`/categories/${userId}`)\n  .set('Authorization', `Bearer ${token}`);\nexpect(response.status).to.equal(200);\nexpect(response.body.status).to.equal('success');",
                   "err": {},
-                  "uuid": "c78e6081-8b37-4006-8369-fab7ffd10467",
-                  "parentUUID": "19c22250-f60d-4d23-b533-f51e469399ce",
+                  "uuid": "00339bae-659b-4019-81df-de4970a4639f",
+                  "parentUUID": "76fd7dc7-e17b-4247-8129-3d976bc45528",
                   "isHook": false,
                   "skipped": false
                 },
@@ -317,7 +317,7 @@
                   "title": "Failed Delete Category",
                   "fullTitle": "Category Feature Delete Category Failed Delete Category",
                   "timedOut": false,
-                  "duration": 66,
+                  "duration": 65,
                   "state": "passed",
                   "speed": "medium",
                   "pass": true,
@@ -326,21 +326,21 @@
                   "context": null,
                   "code": "const response = await request\n  .delete(`/categories/${userId + '123'}`)\n  .set('Authorization', `Bearer ${token}`);\nexpect(response.status).to.equal(404);",
                   "err": {},
-                  "uuid": "6404acc2-e8a0-4f41-bf30-09ec4698d76f",
-                  "parentUUID": "19c22250-f60d-4d23-b533-f51e469399ce",
+                  "uuid": "c4b4c2e3-3732-4e76-8abf-f9ae6031cc18",
+                  "parentUUID": "76fd7dc7-e17b-4247-8129-3d976bc45528",
                   "isHook": false,
                   "skipped": false
                 }
               ],
               "suites": [],
               "passes": [
-                "c78e6081-8b37-4006-8369-fab7ffd10467",
-                "6404acc2-e8a0-4f41-bf30-09ec4698d76f"
+                "00339bae-659b-4019-81df-de4970a4639f",
+                "c4b4c2e3-3732-4e76-8abf-f9ae6031cc18"
               ],
               "failures": [],
               "pending": [],
               "skipped": [],
-              "duration": 137,
+              "duration": 140,
               "root": false,
               "rootEmpty": false,
               "_timeout": 2000
@@ -356,7 +356,7 @@
           "_timeout": 2000
         },
         {
-          "uuid": "073e6239-56a0-4019-bf9c-be8e00b73541",
+          "uuid": "90b45563-86bd-4538-b456-2f3b45d21f6e",
           "title": "Customer Feature",
           "fullFile": "D:\\Folder penting ittp tercinta\\Sanbercode\\QA Automation\\tugas pekanan 3\\Kasiraja\\test-suites\\customer.suite .js",
           "file": "\\test-suites\\customer.suite .js",
@@ -365,7 +365,7 @@
           "tests": [],
           "suites": [
             {
-              "uuid": "f47b395c-37ef-4a2a-baeb-67b9d6e348c9",
+              "uuid": "c55bf816-57bf-4d95-b04c-b16c72f1832a",
               "title": "Get Token",
               "fullFile": "D:\\Folder penting ittp tercinta\\Sanbercode\\QA Automation\\tugas pekanan 3\\Kasiraja\\test-suites\\customer.suite .js",
               "file": "\\test-suites\\customer.suite .js",
@@ -376,7 +376,7 @@
                   "title": "Success Get Token",
                   "fullTitle": "Customer Feature Get Token Success Get Token",
                   "timedOut": false,
-                  "duration": 407,
+                  "duration": 412,
                   "state": "passed",
                   "speed": "slow",
                   "pass": true,
@@ -385,26 +385,26 @@
                   "context": null,
                   "code": "const response = await request(config.baseUrl)\n  .post('/authentications')\n  .send(auth.loginSuccess);\ntoken = response.body.data.accessToken;",
                   "err": {},
-                  "uuid": "e30b11b2-87ca-46d1-a5dd-f78ee4966458",
-                  "parentUUID": "f47b395c-37ef-4a2a-baeb-67b9d6e348c9",
+                  "uuid": "ea9aac63-c7e4-4772-885e-2ae5ff4436f1",
+                  "parentUUID": "c55bf816-57bf-4d95-b04c-b16c72f1832a",
                   "isHook": false,
                   "skipped": false
                 }
               ],
               "suites": [],
               "passes": [
-                "e30b11b2-87ca-46d1-a5dd-f78ee4966458"
+                "ea9aac63-c7e4-4772-885e-2ae5ff4436f1"
               ],
               "failures": [],
               "pending": [],
               "skipped": [],
-              "duration": 407,
+              "duration": 412,
               "root": false,
               "rootEmpty": false,
               "_timeout": 2000
             },
             {
-              "uuid": "51a45258-6e16-48d5-a02a-19c95d666d29",
+              "uuid": "66e8a848-3f98-43ac-8ce4-8dc729efcdfb",
               "title": "Create Customer",
               "fullFile": "D:\\Folder penting ittp tercinta\\Sanbercode\\QA Automation\\tugas pekanan 3\\Kasiraja\\test-suites\\customer.suite .js",
               "file": "\\test-suites\\customer.suite .js",
@@ -415,7 +415,7 @@
                   "title": "Success create a new customer",
                   "fullTitle": "Customer Feature Create Customer Success create a new customer",
                   "timedOut": false,
-                  "duration": 66,
+                  "duration": 68,
                   "state": "passed",
                   "speed": "medium",
                   "pass": true,
@@ -424,8 +424,8 @@
                   "context": null,
                   "code": "const response = request(config.baseUrl)\n  .post('/customers')\n  .send(customer.createSuccess)\n  .set('Authorization', `Bearer ${token}`);\nuserId = (await response).body.data.customerId;\nexpect((await response).status).to.equal(201);\nexpect((await response).body.status).to.equal('success');\nexpect((await response).body.message).to.equal(\n  'Customer berhasil ditambahkan'\n);",
                   "err": {},
-                  "uuid": "9c873899-7e9a-4d8d-8ca2-089ed5ac1d86",
-                  "parentUUID": "51a45258-6e16-48d5-a02a-19c95d666d29",
+                  "uuid": "599f212e-d97e-4309-9482-82b7424b28ee",
+                  "parentUUID": "66e8a848-3f98-43ac-8ce4-8dc729efcdfb",
                   "isHook": false,
                   "skipped": false
                 },
@@ -433,7 +433,7 @@
                   "title": "Failed create a new customer",
                   "fullTitle": "Customer Feature Create Customer Failed create a new customer",
                   "timedOut": false,
-                  "duration": 64,
+                  "duration": 71,
                   "state": "passed",
                   "speed": "medium",
                   "pass": true,
@@ -442,27 +442,27 @@
                   "context": null,
                   "code": "const response = request(config.baseUrl)\n  .post('/customers')\n  .send(customer.createFailed)\n  .set('Authorization', `Bearer ${token}`);\nexpect((await response).status).to.equal(400);\nexpect((await response).body.status).to.equal('fail');",
                   "err": {},
-                  "uuid": "56942672-1f76-410b-870f-731fe1aadffe",
-                  "parentUUID": "51a45258-6e16-48d5-a02a-19c95d666d29",
+                  "uuid": "dbc69b3e-e155-4c2c-b8ed-a2c1f2e0ee69",
+                  "parentUUID": "66e8a848-3f98-43ac-8ce4-8dc729efcdfb",
                   "isHook": false,
                   "skipped": false
                 }
               ],
               "suites": [],
               "passes": [
-                "9c873899-7e9a-4d8d-8ca2-089ed5ac1d86",
-                "56942672-1f76-410b-870f-731fe1aadffe"
+                "599f212e-d97e-4309-9482-82b7424b28ee",
+                "dbc69b3e-e155-4c2c-b8ed-a2c1f2e0ee69"
               ],
               "failures": [],
               "pending": [],
               "skipped": [],
-              "duration": 130,
+              "duration": 139,
               "root": false,
               "rootEmpty": false,
               "_timeout": 2000
             },
             {
-              "uuid": "8c1cb34b-ad7a-42ae-8ee3-291ae88d484c",
+              "uuid": "17ce9818-0f3a-4bdb-8324-2c65e817e137",
               "title": "Get Customer List",
               "fullFile": "D:\\Folder penting ittp tercinta\\Sanbercode\\QA Automation\\tugas pekanan 3\\Kasiraja\\test-suites\\customer.suite .js",
               "file": "\\test-suites\\customer.suite .js",
@@ -473,7 +473,7 @@
                   "title": "Success Get Customer List",
                   "fullTitle": "Customer Feature Get Customer List Success Get Customer List",
                   "timedOut": false,
-                  "duration": 69,
+                  "duration": 70,
                   "state": "passed",
                   "speed": "medium",
                   "pass": true,
@@ -482,26 +482,26 @@
                   "context": null,
                   "code": "const response = await request(config.baseUrl)\n  .get(`/customers/${userId}`)\n  .set('Authorization', `Bearer ${token}`);\nexpect(response.status).to.equal(200);\nexpect(response.body.status).to.equal('success');",
                   "err": {},
-                  "uuid": "bd535e27-19ae-412e-acf1-857f61aa6c3d",
-                  "parentUUID": "8c1cb34b-ad7a-42ae-8ee3-291ae88d484c",
+                  "uuid": "f8aa7eac-fd1d-495f-b31c-ac69f00c6146",
+                  "parentUUID": "17ce9818-0f3a-4bdb-8324-2c65e817e137",
                   "isHook": false,
                   "skipped": false
                 }
               ],
               "suites": [],
               "passes": [
-                "bd535e27-19ae-412e-acf1-857f61aa6c3d"
+                "f8aa7eac-fd1d-495f-b31c-ac69f00c6146"
               ],
               "failures": [],
               "pending": [],
               "skipped": [],
-              "duration": 69,
+              "duration": 70,
               "root": false,
               "rootEmpty": false,
               "_timeout": 2000
             },
             {
-              "uuid": "3723b1b4-d722-4cc7-b13e-8ff3be617ae5",
+              "uuid": "f2f80a3a-0946-490c-9071-941ed5c79350",
               "title": "Get Customer Detail",
               "fullFile": "D:\\Folder penting ittp tercinta\\Sanbercode\\QA Automation\\tugas pekanan 3\\Kasiraja\\test-suites\\customer.suite .js",
               "file": "\\test-suites\\customer.suite .js",
@@ -512,7 +512,7 @@
                   "title": "Success Get Customer Detail",
                   "fullTitle": "Customer Feature Get Customer Detail Success Get Customer Detail",
                   "timedOut": false,
-                  "duration": 68,
+                  "duration": 61,
                   "state": "passed",
                   "speed": "medium",
                   "pass": true,
@@ -521,8 +521,8 @@
                   "context": null,
                   "code": "const response = await request(config.baseUrl)\n  .get(`/customers/${userId}`)\n  .set('Authorization', `Bearer ${token}`);\nexpect(response.status).to.equal(200);\nexpect(response.body.status).to.equal('success');\nexpect(response.body.data.customer.name).to.equal('Budi');",
                   "err": {},
-                  "uuid": "77109709-b12b-4449-bbb3-119c06f81903",
-                  "parentUUID": "3723b1b4-d722-4cc7-b13e-8ff3be617ae5",
+                  "uuid": "bd12a825-29d3-44ef-a8b1-b40b23bf144f",
+                  "parentUUID": "f2f80a3a-0946-490c-9071-941ed5c79350",
                   "isHook": false,
                   "skipped": false
                 },
@@ -530,7 +530,7 @@
                   "title": "Failed Get User Detail",
                   "fullTitle": "Customer Feature Get Customer Detail Failed Get User Detail",
                   "timedOut": false,
-                  "duration": 63,
+                  "duration": 69,
                   "state": "passed",
                   "speed": "medium",
                   "pass": true,
@@ -539,27 +539,27 @@
                   "context": null,
                   "code": "const response = await request(config.baseUrl)\n  .get(`/customers/${userId + '123'}`)\n  .set('Authorization', `Bearer ${token}`);\nexpect(response.status).to.equal(404);\nexpect(response.body.message).to.equal('id tidak valid');",
                   "err": {},
-                  "uuid": "dc6725b7-aed9-4b2c-aacd-1f1455360ba2",
-                  "parentUUID": "3723b1b4-d722-4cc7-b13e-8ff3be617ae5",
+                  "uuid": "6b87aebd-8920-492d-b36c-c38be1a64626",
+                  "parentUUID": "f2f80a3a-0946-490c-9071-941ed5c79350",
                   "isHook": false,
                   "skipped": false
                 }
               ],
               "suites": [],
               "passes": [
-                "77109709-b12b-4449-bbb3-119c06f81903",
-                "dc6725b7-aed9-4b2c-aacd-1f1455360ba2"
+                "bd12a825-29d3-44ef-a8b1-b40b23bf144f",
+                "6b87aebd-8920-492d-b36c-c38be1a64626"
               ],
               "failures": [],
               "pending": [],
               "skipped": [],
-              "duration": 131,
+              "duration": 130,
               "root": false,
               "rootEmpty": false,
               "_timeout": 2000
             },
             {
-              "uuid": "6d1b20f1-af95-4b62-bbf4-a2e28360cc88",
+              "uuid": "add8d91b-aba3-4879-aab8-ba199d30a709",
               "title": "Update Customer Detail",
               "fullFile": "D:\\Folder penting ittp tercinta\\Sanbercode\\QA Automation\\tugas pekanan 3\\Kasiraja\\test-suites\\customer.suite .js",
               "file": "\\test-suites\\customer.suite .js",
@@ -570,7 +570,7 @@
                   "title": "Success Update Customer Detail",
                   "fullTitle": "Customer Feature Update Customer Detail Success Update Customer Detail",
                   "timedOut": false,
-                  "duration": 61,
+                  "duration": 68,
                   "state": "passed",
                   "speed": "medium",
                   "pass": true,
@@ -579,8 +579,8 @@
                   "context": null,
                   "code": "const response = await request(config.baseUrl)\n  .put(`/customers/${userId}`)\n  .send(customer.updateSuccess)\n  .set('Authorization', `Bearer ${token}`);\nexpect(response.status).to.equal(200);\nexpect(response.body.status).to.equal('success');\nexpect(response.body.data.name).to.equal('Budis');",
                   "err": {},
-                  "uuid": "4c3d515d-4683-406b-8f89-c8f8998a8c33",
-                  "parentUUID": "6d1b20f1-af95-4b62-bbf4-a2e28360cc88",
+                  "uuid": "0ba3ae6f-ac0b-491d-9cd3-4aa0842f62ca",
+                  "parentUUID": "add8d91b-aba3-4879-aab8-ba199d30a709",
                   "isHook": false,
                   "skipped": false
                 },
@@ -588,7 +588,7 @@
                   "title": "Failed Update Customer Detail",
                   "fullTitle": "Customer Feature Update Customer Detail Failed Update Customer Detail",
                   "timedOut": false,
-                  "duration": 61,
+                  "duration": 64,
                   "state": "passed",
                   "speed": "medium",
                   "pass": true,
@@ -597,27 +597,27 @@
                   "context": null,
                   "code": "const response = await request(config.baseUrl)\n  .put(`/customers/${userId}`)\n  .send(customer.updateFailed)\n  .set('Authorization', `Bearer ${token}`);\nexpect(response.status).to.equal(400);\nexpect(response.body.message).to.equal(\n  '\"name\" is not allowed to be empty'\n);",
                   "err": {},
-                  "uuid": "2aa8b16c-18f1-48cf-a5cb-cd457017663b",
-                  "parentUUID": "6d1b20f1-af95-4b62-bbf4-a2e28360cc88",
+                  "uuid": "d61e2d55-6b2f-473b-94ef-fb8bcd7ba71c",
+                  "parentUUID": "add8d91b-aba3-4879-aab8-ba199d30a709",
                   "isHook": false,
                   "skipped": false
                 }
               ],
               "suites": [],
               "passes": [
-                "4c3d515d-4683-406b-8f89-c8f8998a8c33",
-                "2aa8b16c-18f1-48cf-a5cb-cd457017663b"
+                "0ba3ae6f-ac0b-491d-9cd3-4aa0842f62ca",
+                "d61e2d55-6b2f-473b-94ef-fb8bcd7ba71c"
               ],
               "failures": [],
               "pending": [],
               "skipped": [],
-              "duration": 122,
+              "duration": 132,
               "root": false,
               "rootEmpty": false,
               "_timeout": 2000
             },
             {
-              "uuid": "2d0a492c-280a-43e2-a781-aba524ba3530",
+              "uuid": "b0bcbbae-fafc-4d8a-8bd8-f8d2a1e81c70",
               "title": "Delete Customer",
               "fullFile": "D:\\Folder penting ittp tercinta\\Sanbercode\\QA Automation\\tugas pekanan 3\\Kasiraja\\test-suites\\customer.suite .js",
               "file": "\\test-suites\\customer.suite .js",
@@ -628,7 +628,7 @@
                   "title": "Success Delete Customer",
                   "fullTitle": "Customer Feature Delete Customer Success Delete Customer",
                   "timedOut": false,
-                  "duration": 67,
+                  "duration": 63,
                   "state": "passed",
                   "speed": "medium",
                   "pass": true,
@@ -637,8 +637,8 @@
                   "context": null,
                   "code": "const response = await request(config.baseUrl)\n  .delete(`/customers/${userId}`)\n  .set('Authorization', `Bearer ${token}`);\nexpect(response.status).to.equal(200);\nexpect(response.body.status).to.equal('success');",
                   "err": {},
-                  "uuid": "3791c697-35db-4803-b915-7a7d193ae68d",
-                  "parentUUID": "2d0a492c-280a-43e2-a781-aba524ba3530",
+                  "uuid": "d35f3f8a-3079-431c-8c01-0c8454493106",
+                  "parentUUID": "b0bcbbae-fafc-4d8a-8bd8-f8d2a1e81c70",
                   "isHook": false,
                   "skipped": false
                 },
@@ -646,7 +646,7 @@
                   "title": "Failed Delete Customer",
                   "fullTitle": "Customer Feature Delete Customer Failed Delete Customer",
                   "timedOut": false,
-                  "duration": 67,
+                  "duration": 62,
                   "state": "passed",
                   "speed": "medium",
                   "pass": true,
@@ -655,21 +655,21 @@
                   "context": null,
                   "code": "const response = await request(config.baseUrl)\n  .delete(`/customers/${userId + '123'}`)\n  .set('Authorization', `Bearer ${token}`);\nexpect(response.status).to.equal(404);",
                   "err": {},
-                  "uuid": "7a9208ae-40ca-499a-af98-aa9ca74ee0cc",
-                  "parentUUID": "2d0a492c-280a-43e2-a781-aba524ba3530",
+                  "uuid": "1d8abc21-cb73-4d6a-b5b5-5ece15038c3a",
+                  "parentUUID": "b0bcbbae-fafc-4d8a-8bd8-f8d2a1e81c70",
                   "isHook": false,
                   "skipped": false
                 }
               ],
               "suites": [],
               "passes": [
-                "3791c697-35db-4803-b915-7a7d193ae68d",
-                "7a9208ae-40ca-499a-af98-aa9ca74ee0cc"
+                "d35f3f8a-3079-431c-8c01-0c8454493106",
+                "1d8abc21-cb73-4d6a-b5b5-5ece15038c3a"
               ],
               "failures": [],
               "pending": [],
               "skipped": [],
-              "duration": 134,
+              "duration": 125,
               "root": false,
               "rootEmpty": false,
               "_timeout": 2000
@@ -685,7 +685,7 @@
           "_timeout": 2000
         },
         {
-          "uuid": "82709d26-06dd-4618-b76a-0161e440b521",
+          "uuid": "522a8c30-d1ab-487b-8908-062a4b9d0b40",
           "title": "Unit Feature",
           "fullFile": "D:\\Folder penting ittp tercinta\\Sanbercode\\QA Automation\\tugas pekanan 3\\Kasiraja\\test-suites\\unit.suite.js",
           "file": "\\test-suites\\unit.suite.js",
@@ -694,7 +694,7 @@
           "tests": [],
           "suites": [
             {
-              "uuid": "109df0d3-695c-4456-8061-d891a507ae47",
+              "uuid": "00261c34-ecb8-4501-95c6-1dd31704fc14",
               "title": "Get Token",
               "fullFile": "D:\\Folder penting ittp tercinta\\Sanbercode\\QA Automation\\tugas pekanan 3\\Kasiraja\\test-suites\\unit.suite.js",
               "file": "\\test-suites\\unit.suite.js",
@@ -705,7 +705,7 @@
                   "title": "Success Get Token",
                   "fullTitle": "Unit Feature Get Token Success Get Token",
                   "timedOut": false,
-                  "duration": 395,
+                  "duration": 404,
                   "state": "passed",
                   "speed": "slow",
                   "pass": true,
@@ -714,26 +714,26 @@
                   "context": null,
                   "code": "const response = await request(config.baseUrl)\n  .post('/authentications')\n  .send(auth.loginSuccess);\ntoken = response.body.data.accessToken;",
                   "err": {},
-                  "uuid": "e326eb7b-5f43-4f8c-8b82-beac67eb9fc6",
-                  "parentUUID": "109df0d3-695c-4456-8061-d891a507ae47",
+                  "uuid": "c269146e-736c-4671-9de5-aa5cf5dcf0cf",
+                  "parentUUID": "00261c34-ecb8-4501-95c6-1dd31704fc14",
                   "isHook": false,
                   "skipped": false
                 }
               ],
               "suites": [],
               "passes": [
-                "e326eb7b-5f43-4f8c-8b82-beac67eb9fc6"
+                "c269146e-736c-4671-9de5-aa5cf5dcf0cf"
               ],
               "failures": [],
               "pending": [],
               "skipped": [],
-              "duration": 395,
+              "duration": 404,
               "root": false,
               "rootEmpty": false,
               "_timeout": 2000
             },
             {
-              "uuid": "48b4d91d-a4da-44b0-bc7f-f6750530de83",
+              "uuid": "7603b4c8-3a12-4dd7-867b-114221c0b967",
               "title": "Create Unit",
               "fullFile": "D:\\Folder penting ittp tercinta\\Sanbercode\\QA Automation\\tugas pekanan 3\\Kasiraja\\test-suites\\unit.suite.js",
               "file": "\\test-suites\\unit.suite.js",
@@ -753,8 +753,8 @@
                   "context": null,
                   "code": "const response = request(config.baseUrl)\n  .post('/units')\n  .send(unit.createSuccess)\n  .set('Authorization', `Bearer ${token}`);\nuserId = (await response).body.data.unitId;\nexpect((await response).status).to.equal(201);\nexpect((await response).body.status).to.equal('success');\nexpect((await response).body.message).to.equal(\n  'Unit berhasil ditambahkan'\n);",
                   "err": {},
-                  "uuid": "fe5c4c6f-1dd2-488d-bd34-a1b2c6ad5b04",
-                  "parentUUID": "48b4d91d-a4da-44b0-bc7f-f6750530de83",
+                  "uuid": "b07e224b-2da7-43b7-9b5d-898c40a0e981",
+                  "parentUUID": "7603b4c8-3a12-4dd7-867b-114221c0b967",
                   "isHook": false,
                   "skipped": false
                 },
@@ -762,7 +762,7 @@
                   "title": "Failed create a new unit",
                   "fullTitle": "Unit Feature Create Unit Failed create a new unit",
                   "timedOut": false,
-                  "duration": 61,
+                  "duration": 74,
                   "state": "passed",
                   "speed": "medium",
                   "pass": true,
@@ -771,27 +771,27 @@
                   "context": null,
                   "code": "const response = request(config.baseUrl)\n  .post('/units')\n  .send(unit.createFailed)\n  .set('Authorization', `Bearer ${token}`);\nexpect((await response).status).to.equal(400);\nexpect((await response).body.status).to.equal('fail');",
                   "err": {},
-                  "uuid": "76822740-6026-4f93-922f-f0d268b0abbc",
-                  "parentUUID": "48b4d91d-a4da-44b0-bc7f-f6750530de83",
+                  "uuid": "7f8d5b94-6889-4258-8130-bcb60d529457",
+                  "parentUUID": "7603b4c8-3a12-4dd7-867b-114221c0b967",
                   "isHook": false,
                   "skipped": false
                 }
               ],
               "suites": [],
               "passes": [
-                "fe5c4c6f-1dd2-488d-bd34-a1b2c6ad5b04",
-                "76822740-6026-4f93-922f-f0d268b0abbc"
+                "b07e224b-2da7-43b7-9b5d-898c40a0e981",
+                "7f8d5b94-6889-4258-8130-bcb60d529457"
               ],
               "failures": [],
               "pending": [],
               "skipped": [],
-              "duration": 126,
+              "duration": 139,
               "root": false,
               "rootEmpty": false,
               "_timeout": 2000
             },
             {
-              "uuid": "d54c1f26-086d-481c-829e-a98efdb21766",
+              "uuid": "51d46ae1-be05-405b-ad43-fd855d38e966",
               "title": "Get Unit List",
               "fullFile": "D:\\Folder penting ittp tercinta\\Sanbercode\\QA Automation\\tugas pekanan 3\\Kasiraja\\test-suites\\unit.suite.js",
               "file": "\\test-suites\\unit.suite.js",
@@ -802,7 +802,7 @@
                   "title": "Success Get Unit List",
                   "fullTitle": "Unit Feature Get Unit List Success Get Unit List",
                   "timedOut": false,
-                  "duration": 63,
+                  "duration": 61,
                   "state": "passed",
                   "speed": "medium",
                   "pass": true,
@@ -811,26 +811,26 @@
                   "context": null,
                   "code": "const response = await request(config.baseUrl)\n  .get(`/units/${userId}`)\n  .set('Authorization', `Bearer ${token}`);\nexpect(response.status).to.equal(200);\nexpect(response.body.status).to.equal('success');",
                   "err": {},
-                  "uuid": "dd527e85-ba93-433a-8429-79c909846aac",
-                  "parentUUID": "d54c1f26-086d-481c-829e-a98efdb21766",
+                  "uuid": "fd4d1c12-bf24-4f11-826f-a7bb0f6be98f",
+                  "parentUUID": "51d46ae1-be05-405b-ad43-fd855d38e966",
                   "isHook": false,
                   "skipped": false
                 }
               ],
               "suites": [],
               "passes": [
-                "dd527e85-ba93-433a-8429-79c909846aac"
+                "fd4d1c12-bf24-4f11-826f-a7bb0f6be98f"
               ],
               "failures": [],
               "pending": [],
               "skipped": [],
-              "duration": 63,
+              "duration": 61,
               "root": false,
               "rootEmpty": false,
               "_timeout": 2000
             },
             {
-              "uuid": "2709f676-cf0d-4c28-94fb-9a1d2cb68290",
+              "uuid": "9986e386-a5c4-4abe-a049-77f33fe2c0f2",
               "title": "Get Unit Detail",
               "fullFile": "D:\\Folder penting ittp tercinta\\Sanbercode\\QA Automation\\tugas pekanan 3\\Kasiraja\\test-suites\\unit.suite.js",
               "file": "\\test-suites\\unit.suite.js",
@@ -841,7 +841,7 @@
                   "title": "Success Get Unit Detail",
                   "fullTitle": "Unit Feature Get Unit Detail Success Get Unit Detail",
                   "timedOut": false,
-                  "duration": 67,
+                  "duration": 61,
                   "state": "passed",
                   "speed": "medium",
                   "pass": true,
@@ -850,8 +850,8 @@
                   "context": null,
                   "code": "const response = await request(config.baseUrl)\n  .get(`/units/${userId}`)\n  .set('Authorization', `Bearer ${token}`);\nexpect(response.status).to.equal(200);\nexpect(response.body.status).to.equal('success');\nexpect(response.body.data.unit.name).to.equal('gram');",
                   "err": {},
-                  "uuid": "122e8c14-a4d6-4c65-9b37-0693d1576882",
-                  "parentUUID": "2709f676-cf0d-4c28-94fb-9a1d2cb68290",
+                  "uuid": "337d6bd8-e191-4400-af81-c3a468272cdf",
+                  "parentUUID": "9986e386-a5c4-4abe-a049-77f33fe2c0f2",
                   "isHook": false,
                   "skipped": false
                 },
@@ -859,7 +859,7 @@
                   "title": "Failed Get User Detail",
                   "fullTitle": "Unit Feature Get Unit Detail Failed Get User Detail",
                   "timedOut": false,
-                  "duration": 67,
+                  "duration": 70,
                   "state": "passed",
                   "speed": "medium",
                   "pass": true,
@@ -868,27 +868,27 @@
                   "context": null,
                   "code": "const response = await request(config.baseUrl)\n  .get(`/units/${userId + '123'}`)\n  .set('Authorization', `Bearer ${token}`);\nexpect(response.status).to.equal(404);\nexpect(response.body.message).to.equal('id tidak valid');",
                   "err": {},
-                  "uuid": "38270bc9-2181-4632-82cd-b60f1c6ebbf8",
-                  "parentUUID": "2709f676-cf0d-4c28-94fb-9a1d2cb68290",
+                  "uuid": "83b7df95-bbea-4718-8c16-102d94629828",
+                  "parentUUID": "9986e386-a5c4-4abe-a049-77f33fe2c0f2",
                   "isHook": false,
                   "skipped": false
                 }
               ],
               "suites": [],
               "passes": [
-                "122e8c14-a4d6-4c65-9b37-0693d1576882",
-                "38270bc9-2181-4632-82cd-b60f1c6ebbf8"
+                "337d6bd8-e191-4400-af81-c3a468272cdf",
+                "83b7df95-bbea-4718-8c16-102d94629828"
               ],
               "failures": [],
               "pending": [],
               "skipped": [],
-              "duration": 134,
+              "duration": 131,
               "root": false,
               "rootEmpty": false,
               "_timeout": 2000
             },
             {
-              "uuid": "4c49474f-a689-4519-9200-881ee66679ab",
+              "uuid": "a32a517a-c264-4c0f-ad1a-d950f7ca318a",
               "title": "Update Unit Detail",
               "fullFile": "D:\\Folder penting ittp tercinta\\Sanbercode\\QA Automation\\tugas pekanan 3\\Kasiraja\\test-suites\\unit.suite.js",
               "file": "\\test-suites\\unit.suite.js",
@@ -899,7 +899,7 @@
                   "title": "Success Update Unit Detail",
                   "fullTitle": "Unit Feature Update Unit Detail Success Update Unit Detail",
                   "timedOut": false,
-                  "duration": 63,
+                  "duration": 62,
                   "state": "passed",
                   "speed": "medium",
                   "pass": true,
@@ -908,8 +908,8 @@
                   "context": null,
                   "code": "const response = await request(config.baseUrl)\n  .put(`/units/${userId}`)\n  .send(unit.updateSuccess)\n  .set('Authorization', `Bearer ${token}`);\nexpect(response.status).to.equal(200);\nexpect(response.body.status).to.equal('success');\nexpect(response.body.data.name).to.equal('kg');",
                   "err": {},
-                  "uuid": "927ea00d-6384-4eb4-9aa5-82bbb6cfdeeb",
-                  "parentUUID": "4c49474f-a689-4519-9200-881ee66679ab",
+                  "uuid": "d6033ebc-73bd-4070-bcf8-7e5d0b93e2e6",
+                  "parentUUID": "a32a517a-c264-4c0f-ad1a-d950f7ca318a",
                   "isHook": false,
                   "skipped": false
                 },
@@ -917,7 +917,7 @@
                   "title": "Failed Update Unit Detail",
                   "fullTitle": "Unit Feature Update Unit Detail Failed Update Unit Detail",
                   "timedOut": false,
-                  "duration": 64,
+                  "duration": 66,
                   "state": "passed",
                   "speed": "medium",
                   "pass": true,
@@ -926,27 +926,27 @@
                   "context": null,
                   "code": "const response = await request(config.baseUrl)\n  .put(`/units/${userId}`)\n  .send(unit.updateFailed)\n  .set('Authorization', `Bearer ${token}`);\nexpect(response.status).to.equal(400);\nexpect(response.body.message).to.equal(\n  'name is required, description is optional'\n);",
                   "err": {},
-                  "uuid": "7501fab2-2788-4842-b070-2ca1f2ea260f",
-                  "parentUUID": "4c49474f-a689-4519-9200-881ee66679ab",
+                  "uuid": "c6838937-318f-4d34-b84b-69871dee3c37",
+                  "parentUUID": "a32a517a-c264-4c0f-ad1a-d950f7ca318a",
                   "isHook": false,
                   "skipped": false
                 }
               ],
               "suites": [],
               "passes": [
-                "927ea00d-6384-4eb4-9aa5-82bbb6cfdeeb",
-                "7501fab2-2788-4842-b070-2ca1f2ea260f"
+                "d6033ebc-73bd-4070-bcf8-7e5d0b93e2e6",
+                "c6838937-318f-4d34-b84b-69871dee3c37"
               ],
               "failures": [],
               "pending": [],
               "skipped": [],
-              "duration": 127,
+              "duration": 128,
               "root": false,
               "rootEmpty": false,
               "_timeout": 2000
             },
             {
-              "uuid": "8342d610-3ce2-48c3-a728-13a739c5afe4",
+              "uuid": "a0be1aee-4c88-4f29-8eff-7022a107308e",
               "title": "Delete Unit",
               "fullFile": "D:\\Folder penting ittp tercinta\\Sanbercode\\QA Automation\\tugas pekanan 3\\Kasiraja\\test-suites\\unit.suite.js",
               "file": "\\test-suites\\unit.suite.js",
@@ -957,7 +957,7 @@
                   "title": "Success Delete Unit",
                   "fullTitle": "Unit Feature Delete Unit Success Delete Unit",
                   "timedOut": false,
-                  "duration": 66,
+                  "duration": 63,
                   "state": "passed",
                   "speed": "medium",
                   "pass": true,
@@ -966,8 +966,8 @@
                   "context": null,
                   "code": "const response = await request(config.baseUrl)\n  .delete(`/units/${userId}`)\n  .set('Authorization', `Bearer ${token}`);\nexpect(response.status).to.equal(200);\nexpect(response.body.status).to.equal('success');",
                   "err": {},
-                  "uuid": "72abcb4b-eac8-4f40-996b-cf2273c45187",
-                  "parentUUID": "8342d610-3ce2-48c3-a728-13a739c5afe4",
+                  "uuid": "dcf50b8b-5115-46d4-ade4-01502a0cd9e1",
+                  "parentUUID": "a0be1aee-4c88-4f29-8eff-7022a107308e",
                   "isHook": false,
                   "skipped": false
                 },
@@ -975,7 +975,7 @@
                   "title": "Failed Delete Unit",
                   "fullTitle": "Unit Feature Delete Unit Failed Delete Unit",
                   "timedOut": false,
-                  "duration": 63,
+                  "duration": 65,
                   "state": "passed",
                   "speed": "medium",
                   "pass": true,
@@ -984,21 +984,21 @@
                   "context": null,
                   "code": "const response = await request(config.baseUrl)\n  .delete(`/units/${userId + '123'}`)\n  .set('Authorization', `Bearer ${token}`);\nexpect(response.status).to.equal(404);",
                   "err": {},
-                  "uuid": "4a85d7ea-acef-40a8-8cd1-27ebd33c03de",
-                  "parentUUID": "8342d610-3ce2-48c3-a728-13a739c5afe4",
+                  "uuid": "69b6c2d3-08b5-458e-94ac-0395b6f4e783",
+                  "parentUUID": "a0be1aee-4c88-4f29-8eff-7022a107308e",
                   "isHook": false,
                   "skipped": false
                 }
               ],
               "suites": [],
               "passes": [
-                "72abcb4b-eac8-4f40-996b-cf2273c45187",
-                "4a85d7ea-acef-40a8-8cd1-27ebd33c03de"
+                "dcf50b8b-5115-46d4-ade4-01502a0cd9e1",
+                "69b6c2d3-08b5-458e-94ac-0395b6f4e783"
               ],
               "failures": [],
               "pending": [],
               "skipped": [],
-              "duration": 129,
+              "duration": 128,
               "root": false,
               "rootEmpty": false,
               "_timeout": 2000
@@ -1014,7 +1014,7 @@
           "_timeout": 2000
         },
         {
-          "uuid": "8a5cbaf6-9ee6-4ef7-8182-dd6d46742978",
+          "uuid": "f3cd01d2-04aa-447c-ab0c-f8e52a518192",
           "title": "User Feature",
           "fullFile": "D:\\Folder penting ittp tercinta\\Sanbercode\\QA Automation\\tugas pekanan 3\\Kasiraja\\test-suites\\user.suite.js",
           "file": "\\test-suites\\user.suite.js",
@@ -1023,7 +1023,7 @@
           "tests": [],
           "suites": [
             {
-              "uuid": "e368910d-c76c-4a2e-be6f-06670edc9bc1",
+              "uuid": "f0d12471-cf8b-410d-9ab2-869fa6a3fc61",
               "title": "Get Token",
               "fullFile": "D:\\Folder penting ittp tercinta\\Sanbercode\\QA Automation\\tugas pekanan 3\\Kasiraja\\test-suites\\user.suite.js",
               "file": "\\test-suites\\user.suite.js",
@@ -1034,7 +1034,7 @@
                   "title": "Success Get Token",
                   "fullTitle": "User Feature Get Token Success Get Token",
                   "timedOut": false,
-                  "duration": 406,
+                  "duration": 404,
                   "state": "passed",
                   "speed": "slow",
                   "pass": true,
@@ -1043,26 +1043,26 @@
                   "context": null,
                   "code": "const response = await request(config.baseUrl)\n  .post('/authentications')\n  .send(auth.loginSuccess);\ntoken = response.body.data.accessToken;",
                   "err": {},
-                  "uuid": "ac3397a6-87f0-4cb8-8c3f-0db01988afe5",
-                  "parentUUID": "e368910d-c76c-4a2e-be6f-06670edc9bc1",
+                  "uuid": "21c20ef8-ca2b-4415-a978-c1eaa14b6fe3",
+                  "parentUUID": "f0d12471-cf8b-410d-9ab2-869fa6a3fc61",
                   "isHook": false,
                   "skipped": false
                 }
               ],
               "suites": [],
               "passes": [
-                "ac3397a6-87f0-4cb8-8c3f-0db01988afe5"
+                "21c20ef8-ca2b-4415-a978-c1eaa14b6fe3"
               ],
               "failures": [],
               "pending": [],
               "skipped": [],
-              "duration": 406,
+              "duration": 404,
               "root": false,
               "rootEmpty": false,
               "_timeout": 2000
             },
             {
-              "uuid": "5abe8144-b9f6-4bc5-9c55-59c3b1cd1b60",
+              "uuid": "a0842b53-fb3c-47db-8f33-0c462991f3d2",
               "title": "Create User",
               "fullFile": "D:\\Folder penting ittp tercinta\\Sanbercode\\QA Automation\\tugas pekanan 3\\Kasiraja\\test-suites\\user.suite.js",
               "file": "\\test-suites\\user.suite.js",
@@ -1073,7 +1073,7 @@
                   "title": "Success create a new user",
                   "fullTitle": "User Feature Create User Success create a new user",
                   "timedOut": false,
-                  "duration": 396,
+                  "duration": 388,
                   "state": "passed",
                   "speed": "slow",
                   "pass": true,
@@ -1082,8 +1082,8 @@
                   "context": null,
                   "code": "const response = request(config.baseUrl)\n  .post('/users')\n  .send(user.createSuccess)\n  .set('Authorization', `Bearer ${token}`);\nuserId = (await response).body.data.userId;\nexpect((await response).status).to.equal(201);\nexpect((await response).body.status).to.equal('success');\nexpect((await response).body.message).to.equal(\n  'User berhasil ditambahkan'\n);",
                   "err": {},
-                  "uuid": "3b1356d3-e116-409e-b648-f60275cde288",
-                  "parentUUID": "5abe8144-b9f6-4bc5-9c55-59c3b1cd1b60",
+                  "uuid": "c866132c-7e88-42cc-bf4c-8aeb6a49e038",
+                  "parentUUID": "a0842b53-fb3c-47db-8f33-0c462991f3d2",
                   "isHook": false,
                   "skipped": false
                 },
@@ -1091,7 +1091,7 @@
                   "title": "Failed create a new user",
                   "fullTitle": "User Feature Create User Failed create a new user",
                   "timedOut": false,
-                  "duration": 64,
+                  "duration": 69,
                   "state": "passed",
                   "speed": "medium",
                   "pass": true,
@@ -1100,27 +1100,27 @@
                   "context": null,
                   "code": "const response = request(config.baseUrl)\n  .post('/users')\n  .send(user.createFailed)\n  .set('Authorization', `Bearer ${token}`);\nexpect((await response).status).to.equal(400);\nexpect((await response).body.status).to.equal('fail');",
                   "err": {},
-                  "uuid": "b8ed93c9-649f-43fe-b4de-e21cf76ace04",
-                  "parentUUID": "5abe8144-b9f6-4bc5-9c55-59c3b1cd1b60",
+                  "uuid": "bc429ce4-2955-4772-9933-971bda0fb469",
+                  "parentUUID": "a0842b53-fb3c-47db-8f33-0c462991f3d2",
                   "isHook": false,
                   "skipped": false
                 }
               ],
               "suites": [],
               "passes": [
-                "3b1356d3-e116-409e-b648-f60275cde288",
-                "b8ed93c9-649f-43fe-b4de-e21cf76ace04"
+                "c866132c-7e88-42cc-bf4c-8aeb6a49e038",
+                "bc429ce4-2955-4772-9933-971bda0fb469"
               ],
               "failures": [],
               "pending": [],
               "skipped": [],
-              "duration": 460,
+              "duration": 457,
               "root": false,
               "rootEmpty": false,
               "_timeout": 2000
             },
             {
-              "uuid": "0b131f65-964d-45a0-83dc-2d210268fb78",
+              "uuid": "c152e566-ecbc-450e-9cc5-67566f7f2734",
               "title": "Get User List",
               "fullFile": "D:\\Folder penting ittp tercinta\\Sanbercode\\QA Automation\\tugas pekanan 3\\Kasiraja\\test-suites\\user.suite.js",
               "file": "\\test-suites\\user.suite.js",
@@ -1131,7 +1131,7 @@
                   "title": "Success Get User List",
                   "fullTitle": "User Feature Get User List Success Get User List",
                   "timedOut": false,
-                  "duration": 74,
+                  "duration": 67,
                   "state": "passed",
                   "speed": "medium",
                   "pass": true,
@@ -1140,26 +1140,26 @@
                   "context": null,
                   "code": "const response = await request(config.baseUrl)\n  .get(`/users/${userId}`)\n  .set('Authorization', `Bearer ${token}`);\nexpect(response.status).to.equal(200);\nexpect(response.body.status).to.equal('success');",
                   "err": {},
-                  "uuid": "ff0e5484-713e-481a-9c44-9ab016f0e902",
-                  "parentUUID": "0b131f65-964d-45a0-83dc-2d210268fb78",
+                  "uuid": "a4d5a8fa-255b-4714-8d20-1003ce2dc1df",
+                  "parentUUID": "c152e566-ecbc-450e-9cc5-67566f7f2734",
                   "isHook": false,
                   "skipped": false
                 }
               ],
               "suites": [],
               "passes": [
-                "ff0e5484-713e-481a-9c44-9ab016f0e902"
+                "a4d5a8fa-255b-4714-8d20-1003ce2dc1df"
               ],
               "failures": [],
               "pending": [],
               "skipped": [],
-              "duration": 74,
+              "duration": 67,
               "root": false,
               "rootEmpty": false,
               "_timeout": 2000
             },
             {
-              "uuid": "fcbc3ede-15ef-4ed6-b5d6-1016716b8e04",
+              "uuid": "ea6e13ef-d865-4bfc-b0ad-e15c9cca0784",
               "title": "Get User Detail",
               "fullFile": "D:\\Folder penting ittp tercinta\\Sanbercode\\QA Automation\\tugas pekanan 3\\Kasiraja\\test-suites\\user.suite.js",
               "file": "\\test-suites\\user.suite.js",
@@ -1170,7 +1170,7 @@
                   "title": "Success Get User Detail",
                   "fullTitle": "User Feature Get User Detail Success Get User Detail",
                   "timedOut": false,
-                  "duration": 63,
+                  "duration": 64,
                   "state": "passed",
                   "speed": "medium",
                   "pass": true,
@@ -1179,8 +1179,8 @@
                   "context": null,
                   "code": "const response = await request(config.baseUrl)\n  .get(`/users/${userId}`)\n  .set('Authorization', `Bearer ${token}`);\nexpect(response.status).to.equal(200);\nexpect(response.body.status).to.equal('success');\nexpect(response.body.data.user.name).to.equal('kasir-serbaguna');",
                   "err": {},
-                  "uuid": "b52768d9-81e4-4cd5-a870-f88a7c2a5ba6",
-                  "parentUUID": "fcbc3ede-15ef-4ed6-b5d6-1016716b8e04",
+                  "uuid": "b1852e4e-bc35-41de-98e4-32e01dd8e2d8",
+                  "parentUUID": "ea6e13ef-d865-4bfc-b0ad-e15c9cca0784",
                   "isHook": false,
                   "skipped": false
                 },
@@ -1188,7 +1188,7 @@
                   "title": "Failed Get User Detail",
                   "fullTitle": "User Feature Get User Detail Failed Get User Detail",
                   "timedOut": false,
-                  "duration": 62,
+                  "duration": 64,
                   "state": "passed",
                   "speed": "medium",
                   "pass": true,
@@ -1197,27 +1197,27 @@
                   "context": null,
                   "code": "const response = await request(config.baseUrl)\n  .get(`/users/${userId + '123'}`)\n  .set('Authorization', `Bearer ${token}`);\nexpect(response.status).to.equal(404);\nexpect(response.body.message).to.equal('id tidak valid');",
                   "err": {},
-                  "uuid": "78edcb31-6d9e-46d3-9d26-7cf9bb5d82be",
-                  "parentUUID": "fcbc3ede-15ef-4ed6-b5d6-1016716b8e04",
+                  "uuid": "2af8a7b7-a765-4371-a16d-8dc811ab4bb7",
+                  "parentUUID": "ea6e13ef-d865-4bfc-b0ad-e15c9cca0784",
                   "isHook": false,
                   "skipped": false
                 }
               ],
               "suites": [],
               "passes": [
-                "b52768d9-81e4-4cd5-a870-f88a7c2a5ba6",
-                "78edcb31-6d9e-46d3-9d26-7cf9bb5d82be"
+                "b1852e4e-bc35-41de-98e4-32e01dd8e2d8",
+                "2af8a7b7-a765-4371-a16d-8dc811ab4bb7"
               ],
               "failures": [],
               "pending": [],
               "skipped": [],
-              "duration": 125,
+              "duration": 128,
               "root": false,
               "rootEmpty": false,
               "_timeout": 2000
             },
             {
-              "uuid": "e03b60c8-be6d-4d42-9898-b019cd1e5db7",
+              "uuid": "fbf425cd-e73b-4cd2-a908-2f462162c467",
               "title": "Update User Detail",
               "fullFile": "D:\\Folder penting ittp tercinta\\Sanbercode\\QA Automation\\tugas pekanan 3\\Kasiraja\\test-suites\\user.suite.js",
               "file": "\\test-suites\\user.suite.js",
@@ -1228,7 +1228,7 @@
                   "title": "Success Update User Detail",
                   "fullTitle": "User Feature Update User Detail Success Update User Detail",
                   "timedOut": false,
-                  "duration": 371,
+                  "duration": 373,
                   "state": "passed",
                   "speed": "slow",
                   "pass": true,
@@ -1237,8 +1237,8 @@
                   "context": null,
                   "code": "const response = await request(config.baseUrl)\n  .put(`/users/${userId}`)\n  .send(user.updateSuccess)\n  .set('Authorization', `Bearer ${token}`);\nexpect(response.status).to.equal(200);\nexpect(response.body.status).to.equal('success');\nexpect(response.body.data.name).to.equal('kaser');",
                   "err": {},
-                  "uuid": "b59a4f74-b318-48ba-a671-08d21796dea9",
-                  "parentUUID": "e03b60c8-be6d-4d42-9898-b019cd1e5db7",
+                  "uuid": "33533cc9-d98c-4e30-ae94-4d74976e7e63",
+                  "parentUUID": "fbf425cd-e73b-4cd2-a908-2f462162c467",
                   "isHook": false,
                   "skipped": false
                 },
@@ -1246,7 +1246,7 @@
                   "title": "Failed Update User Detail",
                   "fullTitle": "User Feature Update User Detail Failed Update User Detail",
                   "timedOut": false,
-                  "duration": 67,
+                  "duration": 65,
                   "state": "passed",
                   "speed": "medium",
                   "pass": true,
@@ -1255,16 +1255,16 @@
                   "context": null,
                   "code": "const response = await request(config.baseUrl)\n  .put(`/users/${userId}`)\n  .send(user.updateFailed)\n  .set('Authorization', `Bearer ${token}`);\nexpect(response.status).to.equal(400);\nexpect(response.body.message).to.equal(\n  '\"name\" is not allowed to be empty'\n);",
                   "err": {},
-                  "uuid": "41e82054-b35d-43f2-85d3-246d277ee89f",
-                  "parentUUID": "e03b60c8-be6d-4d42-9898-b019cd1e5db7",
+                  "uuid": "47e4c4ac-d111-4dc9-8df8-e01e42014caf",
+                  "parentUUID": "fbf425cd-e73b-4cd2-a908-2f462162c467",
                   "isHook": false,
                   "skipped": false
                 }
               ],
               "suites": [],
               "passes": [
-                "b59a4f74-b318-48ba-a671-08d21796dea9",
-                "41e82054-b35d-43f2-85d3-246d277ee89f"
+                "33533cc9-d98c-4e30-ae94-4d74976e7e63",
+                "47e4c4ac-d111-4dc9-8df8-e01e42014caf"
               ],
               "failures": [],
               "pending": [],
@@ -1275,7 +1275,7 @@
               "_timeout": 2000
             },
             {
-              "uuid": "5f638e5c-903b-4485-be82-8b96e9cf038e",
+              "uuid": "685598df-5df1-44ad-96c8-11625ed4780d",
               "title": "Delete User",
               "fullFile": "D:\\Folder penting ittp tercinta\\Sanbercode\\QA Automation\\tugas pekanan 3\\Kasiraja\\test-suites\\user.suite.js",
               "file": "\\test-suites\\user.suite.js",
@@ -1286,7 +1286,7 @@
                   "title": "Success Delete User",
                   "fullTitle": "User Feature Delete User Success Delete User",
                   "timedOut": false,
-                  "duration": 59,
+                  "duration": 64,
                   "state": "passed",
                   "speed": "medium",
                   "pass": true,
@@ -1295,8 +1295,8 @@
                   "context": null,
                   "code": "const response = await request(config.baseUrl)\n  .delete(`/users/${userId}`)\n  .set('Authorization', `Bearer ${token}`);\nexpect(response.status).to.equal(200);\nexpect(response.body.status).to.equal('success');",
                   "err": {},
-                  "uuid": "793aa1f0-9c01-4b87-8651-90f0870d7695",
-                  "parentUUID": "5f638e5c-903b-4485-be82-8b96e9cf038e",
+                  "uuid": "1641215f-96fb-4312-88e9-b84e280f76e4",
+                  "parentUUID": "685598df-5df1-44ad-96c8-11625ed4780d",
                   "isHook": false,
                   "skipped": false
                 },
@@ -1304,7 +1304,7 @@
                   "title": "Failed Delete User",
                   "fullTitle": "User Feature Delete User Failed Delete User",
                   "timedOut": false,
-                  "duration": 59,
+                  "duration": 63,
                   "state": "passed",
                   "speed": "medium",
                   "pass": true,
@@ -1313,21 +1313,21 @@
                   "context": null,
                   "code": "const response = await request(config.baseUrl)\n  .delete(`/users/${userId + '123'}`)\n  .set('Authorization', `Bearer ${token}`);\nexpect(response.status).to.equal(404);",
                   "err": {},
-                  "uuid": "350b6cbd-68d6-42a9-b313-57b52a2a5dab",
-                  "parentUUID": "5f638e5c-903b-4485-be82-8b96e9cf038e",
+                  "uuid": "c5c550e4-1be4-473a-b02b-ca4b405caa3b",
+                  "parentUUID": "685598df-5df1-44ad-96c8-11625ed4780d",
                   "isHook": false,
                   "skipped": false
                 }
               ],
               "suites": [],
               "passes": [
-                "793aa1f0-9c01-4b87-8651-90f0870d7695",
-                "350b6cbd-68d6-42a9-b313-57b52a2a5dab"
+                "1641215f-96fb-4312-88e9-b84e280f76e4",
+                "c5c550e4-1be4-473a-b02b-ca4b405caa3b"
               ],
               "failures": [],
               "pending": [],
               "skipped": [],
-              "duration": 118,
+              "duration": 127,
               "root": false,
               "rootEmpty": false,
               "_timeout": 2000
