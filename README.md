@@ -41,13 +41,9 @@ Make sure you have installed the following software :
 
 ## Evidence
 
-1. mocha
-   https://github.com/fajrinnurhakim/kasiraja-automation/blob/main/evidence/mocha.png
-   https://github.com/fajrinnurhakim/kasiraja-automation/blob/main/evidence/mocha2.png
-
-2. mochawesome
-
-   https://github.com/fajrinnurhakim/kasiraja-automation/blob/main/evidence/mochawesome.png
+https://github.com/fajrinnurhakim/kasiraja-automation/blob/main/evidence/mocha.png
+https://github.com/fajrinnurhakim/kasiraja-automation/blob/main/evidence/mocha2.png
+https://github.com/fajrinnurhakim/kasiraja-automation/blob/main/evidence/mochawesome.png
 
 ## API / Features
 
