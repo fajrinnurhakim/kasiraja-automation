@@ -41,10 +41,13 @@ Make sure you have installed the following software :
 
 ## Evidence
 1. Code
+<video controls src="https://github.com/fajrinnurhakim/kasiraja-automation/blob/main/evidence/user.suite.js%20-%20Kasiraja%20-%20Visual%20Studio%20Code%202024-05-01%2019-45-31.mp4" title="Title"></video>
 
 2. mocha
+<video controls src="https://github.com/fajrinnurhakim/kasiraja-automation/blob/main/evidence/config.json%20-%20Kasiraja%20-%20Visual%20Studio%20Code%202024-05-01%2019-46-16.mp4" title="Title"></video>
 
-3. mocha awesome
+3. mochawesome
+<video controls src="https://github.com/fajrinnurhakim/kasiraja-automation/blob/main/evidence/Mochawesome%20Report%20-%20Google%20Chrome%202024-05-01%2019-47-29.mp4" title="Title"></video>
 
 ## API / Features
 
