@@ -1,0 +1,18 @@
+{
+  "createSuccess": {
+    "name": "makanan ringan",
+    "description": "makanan ringan dari indofood"
+  },
+  "createFailed": {
+    "name": "",
+    "description": "makanan ringan dari indofood"
+  },
+  "updateSuccess": {
+    "name": "makring",
+    "description": "makanan ringan dari indofood"
+  },
+  "updateFailed": {
+    "name": "",
+    "description": "makanan ringan dari indofood"
+  }
+}

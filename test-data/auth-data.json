@@ -1,0 +1,10 @@
+{
+  "loginSuccess": {
+    "email": "berkah123@gmail.com",
+    "password": "cek123456"
+  },
+  "loginFailed": {
+    "email": "berkah123456789@gmail.com",
+    "password": "cek123456"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "createSuccess": {
+    "name": "gram",
+    "description": "weight measurement"
+  },
+  "createFailed": {
+    "name": "",
+    "description": "weight measurement"
+  },
+  "updateSuccess": {
+    "name": "kg",
+    "description": "weight measurement"
+  },
+  "updateFailed": {
+    "name": "",
+    "description": "weight measurement"
+  }
+}

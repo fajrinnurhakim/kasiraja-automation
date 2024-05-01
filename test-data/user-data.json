@@ -1,0 +1,22 @@
+{
+  "createSuccess": {
+    "name": "kasir-serbaguna",
+    "email": "user@example.com",
+    "password": "jiasda2321@"
+  },
+  "createFailed": {
+    "name": "",
+    "email": "user@example.com",
+    "password": "jiasda2321@"
+  },
+  "updateSuccess": {
+    "name": "kaser",
+    "email": "user@example.com",
+    "password": "jiasda2321@"
+  },
+  "updateFailed": {
+    "name": "",
+    "email": "user@example.com",
+    "password": "jiasda2321@"
+  }
+}

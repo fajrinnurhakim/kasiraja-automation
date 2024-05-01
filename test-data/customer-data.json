@@ -1,0 +1,26 @@
+{
+  "createSuccess": {
+    "name": "Budi",
+    "phone": "081234567890",
+    "address": "Bandoeng",
+    "description": "Budi anak Pak Edi"
+  },
+  "createFailed": {
+    "name": "",
+    "phone": "081234567890",
+    "address": "Bandoeng",
+    "description": "Budi anak Pak Edi"
+  },
+  "updateSuccess": {
+    "name": "Budis",
+    "phone": "081234567890",
+    "address": "Bandoeng",
+    "description": "Budi anak Pak Edi"
+  },
+  "updateFailed": {
+    "name": "",
+    "phone": "081234567890",
+    "address": "Bandoeng",
+    "description": "Budi anak Pak Edi"
+  }
+}

@@ -1,8 +1,13 @@
 {
   "dependencies": {
-    "chai": "^5.1.0",
+    "chai": "^4.2.0",
+    "jsonschema": "^1.4.1",
     "mocha": "^10.4.0",
     "mochawesome": "^7.1.3",
     "supertest": "^7.0.0"
+  },
+  "scripts": {
+    "test": "mocha test-suites/ --reporter mochawesome",
+    "start": "start mochawesome-report/mochawesome.html"
   }
 }
