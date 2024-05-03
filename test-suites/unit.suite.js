@@ -62,6 +62,9 @@ describe('Unit Feature', () => {
         expect(response.status).to.equal(200);
         expect(response.body.status).to.equal('success');
         expect(response.body.data.unit.name).to.equal('gram');
+        expect(response.body.data.unit.description).to.equal(
+          'weight measurement'
+        );
       }),
         it('Failed Get User Detail', async () => {
           const response = await request(config.baseUrl)

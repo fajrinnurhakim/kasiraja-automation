@@ -62,6 +62,8 @@ describe('User Feature', () => {
         expect(response.status).to.equal(200);
         expect(response.body.status).to.equal('success');
         expect(response.body.data.user.name).to.equal('kasir-serbaguna');
+        expect(response.body.data.user.email).to.equal('user@example.com');
+        expect(response.body.data.user.role).to.equal('kasir');
       }),
         it('Failed Get User Detail', async () => {
           const response = await request(config.baseUrl)

@@ -62,6 +62,11 @@ describe('Customer Feature', () => {
         expect(response.status).to.equal(200);
         expect(response.body.status).to.equal('success');
         expect(response.body.data.customer.name).to.equal('Budi');
+        expect(response.body.data.customer.phone).to.equal('081234567890');
+        expect(response.body.data.customer.address).to.equal('Bandoeng');
+        expect(response.body.data.customer.description).to.equal(
+          'Budi anak Pak Edi'
+        );
       }),
         it('Failed Get User Detail', async () => {
           const response = await request(config.baseUrl)
