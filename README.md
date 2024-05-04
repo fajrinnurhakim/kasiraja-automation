@@ -12,7 +12,7 @@ Make sure you have installed the following software :
 1. Clone This Repository
 
    ```bash
-   git clone https://github.com/fajrinnurhakim/Automation-JVac-Cypress.git
+   git clone https://github.com/fajrinnurhakim/kasiraja-automation
 
    ```
 
